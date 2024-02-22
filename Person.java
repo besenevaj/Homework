@@ -34,7 +34,7 @@ public class Person {
                 persArray[1] = new Person("Petrov Petr", "Java Developer",
     "petrpetrov@mailbox.com", "891555535", 50000, 26);
                 persArray[2] = new Person("Svetlana Sidorova", "Project Manager", 
-    "svesidorova@mail.ru", "893455125", 4000, 29);
+    "svesidorova@mail.ru", "893455125", 40000, 29);
                 persArray[3] = new Person("Maria Fedorova", "Accountant", 
     "marfedorova@gmail.com", "836767348", 35000, 32);
                 persArray[4] = new Person("Igor Sergeev", "Quality Assurance",
