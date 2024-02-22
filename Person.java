@@ -18,7 +18,8 @@ public class Person {
     @Override
     public String toString(){
         return String.format("ФИО: " + name + ", должность: " + position + ", email: " + email
-        + ", телефон: " + phone_number + ", зарплата: " + salary + ", возраст: " + age);}
+        + ", телефон: " + phone_number + ", зарплата: " + salary + ", возраст: " + age);
+    }
 
     public void print(){
         System.out.println(this);
