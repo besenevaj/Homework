@@ -4,7 +4,7 @@ public class Park {
     
      private String name;
      private String time;
-     private double cost;
+     private int cost;
     
      public ParkRide(String name, String time, int cost) {
      this.name = name;
