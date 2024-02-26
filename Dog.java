@@ -9,6 +9,7 @@ public class Dog extends Animal{
         this.name = name;
     }
  
+    @Override
     public void run(int range) {
         if (range > 500) {
             System.out.println("Собака не может пробежать " + range + " метров.");
@@ -17,6 +18,7 @@ public class Dog extends Animal{
         }
     }
  
+    @Override
     public void swim(int range) {
         if (range > 10) {
             System.out.println("Собака не может проплыть " + range + " метров.");
