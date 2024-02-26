@@ -11,7 +11,7 @@ public class Bowl {
         System.out.println();
     }
 
-    public void decreaseFood(int amount) {
+    public static void decreaseFood(int amount) {
         if (food >= amount) {
             food -= amount;
         } else {
