@@ -1,45 +1,27 @@
-public class Cat extends Animal {
+public class Dog extends Animal{
     private String name;
-    private boolean isFull;
-    public static int countCat = 0;
- 
-    Cat (String name) {
+    private boolean isHungry;
+    public static int countDog = 0;
+    
+    Dog(String name) {
         super();
-        countCat++;
+        countDog++;
         this.name = name;
-        this.isFull = false;
     }
  
     public void run(int range) {
-        if (range > 200) {
-            System.out.println(name + " не может пробежать " + range + "метров.");
+        if (range > 500) {
+            System.out.println("Собака не может пробежать " + range + " метров.");
         } else {
             System.out.println(name + " пробежал " + range + " метров.");
         }
     }
  
     public void swim(int range) {
-        System.out.println("Коты не могут плавать.");
-    }
-
-    public void eat() {
-    if (isFull == false && Bowl.food > 0) {
-        System.out.println(name + " поел.");
-        isFull = true;
-    } else {
-        System.out.println(name + " голоден.");
+        if (range > 10) {
+            System.out.println("Собака не может проплыть " + range + " метров.");
+        } else {
+            System.out.println(name + " проплыл " + range + " метров.");
         }
     }
-
-    public boolean isFull() {
-        return isFull;
-    }
-    
-    static int getCountCat(){
-        return countCat;
-    }
-    
-    public String getName() {
-        return name;
-    } 
-}
+}    
