@@ -33,13 +33,5 @@ public class Cat extends Animal {
 
     public boolean isFull() {
         return isFull;
-    }
-    
-    static int getCountCat(){
-        return countCat;
-    }
-    
-    public String getName() {
-        return name;
-    } 
+    }    
 }
