@@ -30,8 +30,12 @@ public class Cat extends Animal {
         System.out.println(name + " голоден.");
         }
     }
-
+    
     public boolean isFull() {
         return isFull;
-    }    
+    } 
+
+    public String getName() {
+        return name;
+    }
 }
