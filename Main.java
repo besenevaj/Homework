@@ -17,7 +17,7 @@ public class Main {
             System.out.println();
         }
         
-        Bowl.addFood(10);
+        bowl.addFood(10);
         System.out.println();
         
         sharik.run(100);
