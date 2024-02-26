@@ -11,7 +11,6 @@ public class Main {
 
         for (Cat cat : cats) {
             cat.eat();
-            bowl.decreaseFood(5);
             System.out.println("Количество еды в миске: " + bowl.getFood());
             System.out.println("Кот " + cat.getName() + " сыт: " + cat.isFull());
             System.out.println();
