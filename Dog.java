@@ -1,6 +1,5 @@
 public class Dog extends Animal{
     private String name;
-    private boolean isHungry;
     public static int countDog = 0;
     
     Dog(String name) {
