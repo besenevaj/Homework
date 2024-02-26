@@ -1,44 +1,31 @@
 public class Main {
-    public static void main(String args[]) {
-        printThreeWords();
-        checkSumSign();
-        printColor();
-        compareNumbers();
-    }
+    public static void main(String[] args) {
+        Cat[] cats = new Cat[3];
+        cats[0] = new Cat("Барсик");
+        cats[1] = new Cat("Мурзик");
+        cats[2] = new Cat("Рыжик");
+        
+        Dog sharik = new Dog("Шарик");
 
-    public static void printThreeWords() {
-        System.out.println("Orange\nBanana\nApple");
-    }
+        Bowl bowl = new Bowl(10);
 
-    public static void checkSumSign() {
-        int a = 3;
-        int b = -5;
-        int sum = a + b;
-        if (sum >= 0) {
-            System.out.println("Сумма положительная");
-        } else {
-            System.out.println("Сумма отрицательная");
+        for (Cat cat : cats) {
+            cat.eat();
+            bowl.decreaseFood(5);
+            System.out.println("Количество еды в миске: " + bowl.getFood());
+            System.out.println("Кот " + cat.getName() + " сыт: " + cat.isFull());
+            System.out.println();
         }
-    }
-
-    public static void printColor() {
-        int value = 255;
-        if (value <= 0) {
-            System.out.println("Красный");
-        } else if (value > 0 && value <= 100) {
-            System.out.println("Жёлтый");
-        } else if (value > 100) {
-            System.out.println("Зелёный");
-        }
-    }
-
-    public static void compareNumbers() {
-        int a = 3;
-        int b = 5;
-        if (a >= b) {
-            System.out.println("a >= b");
-        } else {
-            System.out.println("a < b");
-        }
+        
+        Bowl.addFood(10);
+    
+        sharik.run(100);
+        sharik.swim(100);
+        cats[0].run(100);
+        cats[0].swim(100);
+        
+        System.out.println("Животных создано: " + Animal.countAnimal);
+        System.out.println("Собак создано: " + Dog.countDog);
+        System.out.println("Котов создано: " + Cat.countCat);
     }
 }
