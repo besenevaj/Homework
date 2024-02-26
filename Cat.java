@@ -28,6 +28,7 @@ public class Cat extends Animal {
     if (isFull == false && Bowl.food > 0) {
         System.out.println(name + " поел.");
         isFull = true;
+        Bowl.decreaseFood(5);
     } else {
         System.out.println(name + " голоден.");
         }
