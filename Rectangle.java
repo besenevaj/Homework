@@ -1,4 +1,4 @@
-    class Rectangle implements Shape {
+    class Rectangle implements Perimiter, Area {
     private double width;
     private double height;
     private String fillColor;
@@ -9,10 +9,12 @@
         this.height = height;
     }
 
+    @Override
     public double calculatePerimeter() {
         return 2 * (width + height);
     }
-    
+
+    @Override
     public double calculateArea() {
         return width * height;
     }
