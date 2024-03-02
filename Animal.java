@@ -1,6 +1,5 @@
 public class Animal {
     static int countAnimal = 0;
-//private переменные не наследуются
     
     Animal() {
         countAnimal++;
