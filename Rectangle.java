@@ -1,4 +1,4 @@
-    class Rectangle implements Perimiter, Area {
+    class Rectangle implements Perimeter, Area {
     private double width;
     private double height;
     private String fillColor;
