@@ -1,15 +1,17 @@
-    public class Circle implements Shape {
+    public class Circle implements Perimeter, Area {
     private double radius;
     private String fillColor;
     private String borderColor;
     public Circle(double radius) {
         this.radius = radius;
     }
-    
+
+    @Override
     public double calculatePerimeter() {
         return Math.round(2 * Math.PI * radius * 100) / 100.0;
     }
 
+    @Override
     public double calculateArea() {
         return Math.round(Math.PI * radius * radius * 100) / 100.0;
      }
