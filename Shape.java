@@ -1,4 +1,3 @@
-public interface Shape {
+public interface Peritemer {
     double calculatePerimeter();
-    double calculateArea();
 }
